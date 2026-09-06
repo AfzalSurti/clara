@@ -11,7 +11,8 @@ Public API is filled in as the package grows:
 
 from __future__ import annotations
 
+from .clara import CLARA
 from .kmedoids import KMedoids
 
 __version__ = "0.1.0"
-__all__ = ["KMedoids", "__version__"]
+__all__ = ["CLARA", "KMedoids", "__version__"]

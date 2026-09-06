@@ -20,8 +20,10 @@ Built incrementally. What is landed so far:
       minkowski, cosine; a name resolver; and a triangular pairwise matrix.
 - [x] `clara.kmedoids.KMedoids` — PAM (BUILD + SWAP), `fit` / `predict` /
       `fit_predict`, supports a precomputed distance matrix.
-- [ ] `clara.clara.CLARA` — sampling wrapper
-- [ ] `clara.metrics` — silhouette, total / average cost
+- [x] `clara.clara.CLARA` — sampling wrapper over PAM; forces the running-best
+      medoids into later samples; `cost_` is the full-data mean dissimilarity.
+- [x] `clara.metrics` — `total_cost`, `average_cost`, `silhouette_samples`,
+      `silhouette_score`.
 - [ ] `clara.dataset` — CSV loader + synthetic blobs
 - [ ] `clara.cli` — command line interface
 
