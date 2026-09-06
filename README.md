@@ -18,7 +18,8 @@ Built incrementally. What is landed so far:
 
 - [x] `clara.distance` — euclidean, squared-euclidean, manhattan, chebyshev,
       minkowski, cosine; a name resolver; and a triangular pairwise matrix.
-- [ ] `clara.kmedoids.KMedoids` — PAM (BUILD + SWAP)
+- [x] `clara.kmedoids.KMedoids` — PAM (BUILD + SWAP), `fit` / `predict` /
+      `fit_predict`, supports a precomputed distance matrix.
 - [ ] `clara.clara.CLARA` — sampling wrapper
 - [ ] `clara.metrics` — silhouette, total / average cost
 - [ ] `clara.dataset` — CSV loader + synthetic blobs
