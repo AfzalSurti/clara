@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clara"
+version = "0.1.0"
+description = "CLARA (Clustering LARge Applications) and PAM k-medoids, implemented from scratch in pure Python with no third-party dependencies."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "AfzalSurti" }]
+keywords = ["clustering", "k-medoids", "pam", "clara", "unsupervised", "machine-learning"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = []
+
+[project.scripts]
+clara = "clara.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/AfzalSurti/clara"
+
+[tool.setuptools.packages.find]
+include = ["clara*"]
+
+[tool.setuptools.package-data]
+clara = ["py.typed"]
