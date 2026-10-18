@@ -1,5 +1,7 @@
 # clara
 
+[![tests](https://github.com/AfzalSurti/clara/actions/workflows/tests.yml/badge.svg)](https://github.com/AfzalSurti/clara/actions/workflows/tests.yml)
+
 **CLARA** (Clustering LARge Applications) and **PAM** (Partitioning Around
 Medoids, a.k.a. *k*-medoids), implemented **from scratch in pure Python** with
 **no third-party dependencies** — only the standard library. Every numerical
